@@ -1,49 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Our Services</title>
     <link rel="icon" type="image/png" href="logo.png">
     <style>
-      
-      body {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  color:white;
-  background-color:#1e1e1e;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Montserrat';
-  font-weight: 700;
-}
-
-html {font-size: 100%;}
-h1 {font-size: 5.652rem;}
-h2 {font-size: 3.997rem;}
-h3 {font-size: 2.827rem;}
-h4 {font-size: 1.999rem;}
-h5 {font-size: 1.414rem;}
-small {font-size: 0.707rem;}
-
-footer{
-  text-align: center;
-
-  .grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-}
-li::marker {
-  color: white;
-}
-  .button {
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            color: white;
+            background-color: #1e1e1e;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        html {
+            font-size: 100%;
+        }
+        h1 { font-size: 5.652rem; }
+        h2 { font-size: 3.997rem; }
+        h3 { font-size: 2.827rem; }
+        h4 { font-size: 1.999rem; margin: 0; }
+        h5 { font-size: 1.414rem; }
+        small { font-size: 0.707rem; }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0;
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        
+        li::marker {
+            color: white;
+            font-size: 1.5rem;
+        }
+        .button {
 text-decoration: none;
 display: inline-block;
 text-align: center;
@@ -55,23 +61,26 @@ border-radius: 8px;
 font-family: 'Montserrat', sans-serif;
 transition: background 0.3s ease;
 }
-
-.button:hover {
-text-decoration:underline;
-}
+        
+        .button:hover {
+            text-decoration: underline;
+        }
     </style>
-  </head>
-  <body>
-     <nav>
+</head>
+<body>
+<nav>
     <a class="button" href="/index.html">Home</a>
     <a class="button" href="/services.html">Our Services</a>
-      <a class="button" href="/about.html">About Us</a>
-    </nav>
+    <a class="button" href="/about.html">About Us</a>
+</nav>
+    
     <h1>Our Services</h1>
     <h2>Manual Labor Tasks</h2>
-    <div class="grid-container">
-      <li><h4 style="grid-column: 1 / 2; grid-row: 1 / 2">Raking Leaves</h4></li>
-      <li><h4 style="grid-column: 2 / 3; grid-row: 1 / 2">Backyard Cleaning</h4></li>
-      <li><h4 style="grid-column: 3 / 3; grid-row: 1 / 2">Grass Mowing</h4></li>
-    </div>
-  </body>
+    
+    <ul class="grid-container">
+        <li><h4>Raking Leaves</h4></li>
+        <li><h4>Backyard Cleaning</h4></li>
+        <li><h4>Grass Mowing</h4></li>
+    </ul>
+</body>
+</html>
