@@ -1,0 +1,1 @@
+This is the Github Repository for the small company, Bramaleo, or BML. This repository helps us keep our public website up and running and help us spread or business as well as allow us to have easy contact with our customers and other people with inquiries.
